@@ -1,4 +1,4 @@
-{% set version = '0.11-0' %}
+{% set version = "0.11-0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1002
+  number: 1003
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,14 +36,14 @@ test:
 
 about:
   home: https://github.com/yixuan/rARPACK
-  license: BSD_3_clause
-  summary: Previously an R wrapper of the 'ARPACK' library <http://www.caam.rice.edu/software/ARPACK/>,
-    and now a shell of the R package 'RSpectra', an R interface to the 'Spectra' library
-    <http://yixuan.cos.name/spectra/> for solving large scale eigenvalue/vector problems.
-    The current version of 'rARPACK' simply imports and exports the functions provided
-    by 'RSpectra'. New users of 'rARPACK' are advised to switch to the 'RSpectra' package.
+  license: BSD-3-Clause
+  summary: Previously an R wrapper of the 'ARPACK' library <http://www.caam.rice.edu/software/ARPACK/>, and now a shell of the R package 'RSpectra', an R interface to the 'Spectra' library <http://yixuan.cos.name/spectra/> for solving large scale eigenvalue/vector problems. The current version of 'rARPACK' simply imports
+    and exports the functions provided by 'RSpectra'. New users of 'rARPACK' are advised to switch to the 'RSpectra' package.
   license_family: BSD
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause
+    - LICENSE
 extra:
   recipe-maintainers:
     - conda-forge/r
