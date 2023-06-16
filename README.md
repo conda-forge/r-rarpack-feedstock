@@ -1,11 +1,11 @@
-About r-rarpack
-===============
+About r-rarpack-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rarpack-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yixuan/rARPACK
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rarpack-feedstock/blob/main/LICENSE.txt)
 
 Summary: Previously an R wrapper of the 'ARPACK' library <http://www.caam.rice.edu/software/ARPACK/>, and now a shell of the R package 'RSpectra', an R interface to the 'Spectra' library <http://yixuan.cos.name/spectra/> for solving large scale eigenvalue/vector problems. The current version of 'rARPACK' simply imports and exports the functions provided by 'RSpectra'. New users of 'rARPACK' are advised to switch to the 'RSpectra' package.
 
